@@ -68,6 +68,7 @@ body {
 .document {
 	height: 100%;
 	background-color: var(--white-light);
+	overflow-y: auto;
 	/* Firefox */
 	scrollbar-width: 6px;
 	scrollbar-color: var(--black-dark);
