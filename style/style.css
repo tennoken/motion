@@ -19,6 +19,19 @@ li {
 	list-style: none;
 }
 
+button {
+	background: transparent;
+	border: 0;
+	outline: 0;
+}
+
+input,
+textarea {
+	background-color: var(--text-edit-bg-color);
+	color: var(--smokywhite);
+	font-size: 1.5em;
+}
+
 body {
 	background: url(../assets/cool-background.png) center/cover no-repeat;
 	display: flex;
@@ -27,6 +40,39 @@ body {
 	margin: 0;
 	font-size: 1.25rem;
 	overflow: hidden;
+}
+
+.dialog {
+	position: absolute;
+	top: 30%;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dialog .close {
+	font-size: 20px;
+	position: absolute;
+	right: 12px;
+	top: 12px;
+}
+
+#dialog__body {
+	margin-top: 1.5rem;
+}
+
+.form__container {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 0.5rem;
+}
+
+.dialog .dialog__submit {
+	font-size: 1em;
+	border-radius: 5px;
+	border: 1px solid #e9967a;
+	padding: 0.15em 0 0.15em 0;
 }
 
 .container {
@@ -69,20 +115,17 @@ body {
 	height: 100%;
 	background-color: var(--white-light);
 	overflow-y: auto;
-	/* Firefox */
 	scrollbar-width: 6px;
 	scrollbar-color: var(--black-dark);
 	scrollbar-face-color: var(--black-light);
 }
 
 .document::-webkit-scrollbar {
-	/* Safari and Chrome */
 	background-color: var(--black-dark);
 	width: 6px;
 }
 
 .document::-webkit-scrollbar-thumb {
-	/* Safari and Chrome */
 	background-color: var(--darksalmon);
 }
 
