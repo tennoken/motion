@@ -120,6 +120,28 @@ body {
 	scrollbar-face-color: var(--black-light);
 }
 
+.page-item {
+	display: flex;
+	align-items: center;
+}
+
+.page-item__body section {
+	/* display: flex; */
+}
+
+.page-item__controls {
+	background-color: #e9967a;
+	border-radius: 5px;
+	width: 25px;
+	height: 25px;
+	margin-left: 40px;
+}
+
+.close {
+	width: 25px;
+	height: 25px;
+}
+
 .document::-webkit-scrollbar {
 	background-color: var(--black-dark);
 	width: 6px;
