@@ -123,6 +123,11 @@ body {
 .page-item {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
+	margin: 20px;
+	background: rgba(0, 0, 0, 0.6);
+	border-radius: 5px;
+	padding: 20px;
 }
 
 .page-item__body section {

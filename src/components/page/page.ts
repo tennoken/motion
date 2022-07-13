@@ -20,7 +20,7 @@ export class PageItemComponent
 {
 	private closeListener?: onCloseListener;
 	constructor() {
-		super(`<li class="page-item">
+		super(`<li class="page-item" draggable="true">
 				<section class="page-item__body"></section>
 					<div class="page-item__controls">
 						<button class="close">&times;</button>
